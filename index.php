@@ -1,3 +1,7 @@
+<?php
+include("script.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,9 +23,11 @@
         </div>
         <div id="campos">
             <label>Senha:</label>
-            <input type="password" name="senha" id="senha" required>
+            <input type="password" name="senha" id="password" minlength="6" maxlength="12" onkeyup="verificaForcaSenha();" required>
+            <span id="password-status"></span>
         </div>
         <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
     </form>
+
 </body>
 </html>
