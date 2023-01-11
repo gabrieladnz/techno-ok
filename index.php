@@ -23,7 +23,8 @@ include("script.php");
         </div>
         <div id="campos">
             <label>Senha:</label>
-            <input type="password" name="senha" id="password" minlength="6" maxlength="12" onkeyup="verificaForcaSenha();" required>
+            <input type="password" name="senha" id="password" minlength="6" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="verificaForcaSenha();" required>
+            <span class="lnr lnr-eye"></span>
             <span id="password-status"></span>
         </div>
         <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
