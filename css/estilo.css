@@ -22,13 +22,16 @@ body {
 }
 
 .container {
+    margin-top: 30%;
     width: 80%;
     height: 80vh;
     display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    flex-direction: row;
+    justify-content: center;
 }
 
 .form-image {
+    margin-left: 10%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -61,12 +64,19 @@ body {
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
+    width: 22rem;
     height: 0.3rem;
     background-color: blueviolet;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+}
+
+#olhos {
+    color: #6c63ff;
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 1.5%;
 }
 
 .campos {
@@ -90,6 +100,26 @@ body {
 .campos input:focus-visible {
     outline: 1px solid #6c63ff;
 }
+
+.campos label, .genter-title h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.campos input::placeholder {
+    color: #000000be;
+}
+
+.botao input{
+    width: 60%;
+    height: 10%;
+    color: white;
+    background-color: #6c63ff;
+    border-radius: 10em;
+    outline: auto;
+}
+
 
 /*   
 form {
