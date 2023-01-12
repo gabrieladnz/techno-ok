@@ -15,10 +15,17 @@ include("script.php");
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Cadastro</title>
 </head>
 
 <body>
+    <nav>
+        <a href="https://github.com/gabrieladnz" target="_blank"><button type="button" id="botGit">gabrieladnz <span class="bi bi-github"></span></button></a>
+        <a href="https://www.linkedin.com/in/gabrieladnz/" target="_blank"><button type="button" id="botLinkd"><span class="bi bi-linkedin"></span></button></a>
+        <a href="mailto:gabrieladnz.dev@gmail.com?" target="_blank"><button type="button" id="botEmail"><span class="bi bi-envelope-fill"></span></button></a>
+    </nav>
+
     <div class="container">
         <div class="form-image">
             <img src="img/form.svg">

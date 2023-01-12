@@ -21,8 +21,34 @@ body {
     background-attachment: fixed;
 }
 
+nav {
+    margin-top: 0.3%;
+    margin-left: 10%;
+}
+
+#botGit {
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(153, 15, 228, 0.215);
+    border-color: rgba(153, 15, 228, 0);
+}
+
+#botLinkd {
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(153, 15, 228, 0.215);
+    border-color: rgba(153, 15, 228, 0);
+}
+
+#botEmail {
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(153, 15, 228, 0.215);
+    border-color: rgba(153, 15, 228, 0);
+}
+
 .container {
-    margin-top: 30%;
+    margin-top: 28%;
     width: 80%;
     height: 80vh;
     display: flex;
