@@ -4,6 +4,7 @@ include("script.php");
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@ include("script.php");
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <title>Cadastro</title>
 </head>
+
 <body>
     <form method="POST" action="cadastro.php">
         <div id="campos">
@@ -36,4 +38,5 @@ include("script.php");
     </form>
 
 </body>
+
 </html>
