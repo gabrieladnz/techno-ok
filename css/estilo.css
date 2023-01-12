@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&family=Inter:wght@100;200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(82, 6, 182, 0.5);
+    padding: 1rem;
+}
+
+.form-image {
+    width: 31rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* item abaixo do outro */
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: blueviolet;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.campos {
+    display: flex;
+    flex: column;
+    margin-bottom: 1.1rem;
+}
+
+.campos input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black;
+}
+
+.campos input:hover {
+    background-color: #eeeeee75;
+}
+
+.campos input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+/*   
+form {
+    background-color: blanchedalmond;
+    width: 50vw;
+    height: 25vw;
+    margin-left: 25vw;
+    margin-top: 10vw;
+}
+    */

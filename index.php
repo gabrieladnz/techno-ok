@@ -9,33 +9,46 @@ include("script.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="shortcut icon" href="img/logotipo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <script src="https://kit.fontawesome.com/c2eaecad4c.js"></script>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>Cadastro</title>
 </head>
 
 <body>
-    <form method="POST" action="cadastro.php" target="contato">
-    <iframe style="display:none;" name="contato" src="cadastro.php"></iframe>
-        <div id="campos">
-            <label>Nome:</label>
-            <input type="text" name="nome" id="nome" required>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/form.svg">
         </div>
-        <div id="campos">
-            <label>Email:</label>
-            <input type="text" name="email" id="email" required>
+        <div class="form">
+            <form method="POST" action="cadastro.php" target="contato">
+                <iframe style="display:none;" name="contato" src="cadastro.php"></iframe>
+                <div class="form-header">
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class="campos">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </div>
+                <div class="campos">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Insira seu email" required>
+                </div>
+                <div class="campos">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="password" placeholder="Insira sua senha" minlength="6" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="verificaForcaSenha();" required>
+                    <span id="olhos" class="lnr lnr-eye" onclick="espiando()"></span>
+                    <span id="password-status"></span>
+                </div>
+                <div class="botao">
+                    <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+                </div>
+            </form>
         </div>
-        <div id="campos">
-            <label>Senha:</label>
-            <input type="password" name="senha" id="password" minlength="6" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="verificaForcaSenha();" required>
-            <span id="olhos" class="lnr lnr-eye" onclick="espiando()"></span>
-            <span id="password-status"></span>
-        </div>
-        <input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
-    </form>
+    </div>
 
 </body>
 
