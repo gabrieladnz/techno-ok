@@ -18,7 +18,8 @@ include("script.php");
 </head>
 
 <body>
-    <form method="POST" action="cadastro.php">
+    <form method="POST" action="cadastro.php" target="contato">
+    <iframe style="display:none;" name="contato" src="cadastro.php"></iframe>
         <div id="campos">
             <label>Nome:</label>
             <input type="text" name="nome" id="nome" required>
@@ -30,7 +31,6 @@ include("script.php");
         <div id="campos">
             <label>Senha:</label>
             <input type="password" name="senha" id="password" minlength="6" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onkeyup="verificaForcaSenha();" required>
-            <i class="far fa-images"></i>
             <span id="olhos" class="lnr lnr-eye" onclick="espiando()"></span>
             <span id="password-status"></span>
         </div>

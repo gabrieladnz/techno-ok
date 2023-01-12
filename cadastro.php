@@ -13,11 +13,16 @@ $array = mysqli_fetch_array($select);
 $emailarray = isset($array['email']);
 
 if ($emailarray == $email) {
-    echo "Email já cadastrado no sistema.";
+    echo "<script language='javascript'>";
+    echo "alert('Email já cadastrado no sistema.')";
+    echo "</script>";
     die();
 } else {
     // inserindo dados no bd
     $cadastro = "INSERT INTO usuarios(nome, email, senha) VALUES('$nome', '$email', '$senha')";
     $resultadoCadastro = mysqli_query($con, $cadastro);
-    echo "Cadastro realizado com sucesso!";
+
+    echo "<script language='javascript'>";
+    echo "alert('Cadastro realizado com sucesso!')";
+    echo "</script>";
 }
